@@ -106,7 +106,7 @@ func CreateStriveProxy(listen string, GGStriveAPIURL string, PatchedAPIURL strin
 			Transport: &http.Transport{
 				Proxy:                 http.ProxyFromEnvironment,
 				DialContext:           (&net.Dialer{Timeout: 30 * time.Second}).DialContext,
-				ResponseHeaderTimeout: 1 * time.Minute, // Some people have _really_ slow internet to Japan.
+				ResponseHeaderTimeout: 3 * time.Minute, // Some people have _really_ slow internet to Japan.
 				MaxIdleConns:          2,
 				MaxIdleConnsPerHost:   1,
 				MaxConnsPerHost:       2,
