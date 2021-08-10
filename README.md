@@ -4,6 +4,7 @@ Guilty Gear Strive Proxy for faster loading screens.
 
 Totsugeki lets you totsugeki past the Strive connection screen.
 
+
 https://user-images.githubusercontent.com/1121068/126918454-f2b2366f-2c82-4f97-acea-a36aa92485e5.mp4
 
 ## Quickstart
