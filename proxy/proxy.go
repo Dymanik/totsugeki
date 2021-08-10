@@ -111,7 +111,7 @@ func CreateStriveProxy(listen string, GGStriveAPIURL string, PatchedAPIURL strin
 				MaxIdleConnsPerHost:   1,
 				MaxConnsPerHost:       2,
 				IdleConnTimeout:       90 * time.Second, // Drop idle connection after 90 seconds to balance between being nice to ASW and keeping things fast.
-				TLSHandshakeTimeout:   30 * time.Second,
+				TLSHandshakeTimeout:   3 * time.Second,
 			},
 			Timeout: 3 * time.Minute, // 2x the slowest request I've seen.
 		},
